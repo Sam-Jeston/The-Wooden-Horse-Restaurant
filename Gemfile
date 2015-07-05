@@ -30,6 +30,9 @@ gem 'autoprefixer-rails'
 # Font awesome
 gem 'font-awesome-rails'
 
+# Puma Web Server
+gem 'puma'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
