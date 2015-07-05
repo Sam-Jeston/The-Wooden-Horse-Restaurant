@@ -4,9 +4,26 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+/*! Declaration of custom fonts */
+
+@font-face {
+    font-family: "Imperator Regular";
+    src: url(/assets/Imperator.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Imperator Bold";
+    src: url(/assets/ImperatorBold.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Imperator Caps";
+    src: url(/assets/ImperatorSmallCaps.ttf) format("truetype");
+}
+
 body {
-    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
-    background: image-url('background.jpg') no-repeat center center fixed;
+    font-family: "Imperator Regular";
+    background: image-url('restaurant-bar-size.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -20,7 +37,7 @@ h4,
 h5,
 h6 {
     text-transform: uppercase;
-    font-family: "Josefin Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Imperator Bold";
     font-weight: 700;
     letter-spacing: 1px;
 }
@@ -49,7 +66,7 @@ hr {
 
 .navbar-nav {
     text-transform: uppercase;
-    font-weight: 400;
+    font-weight: 600;
     letter-spacing: 3px;
 }
 
@@ -91,6 +108,10 @@ hr {
     letter-spacing: 1px;
 }
 
+.img-trans {
+    background: rgba(255,255,255,0.9);
+}
+
 .img-border {
     float: none;
     margin: 0 auto 0;
@@ -119,7 +140,7 @@ footer p {
         padding: 30px 0 10px;
         text-align: center;
         text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
-        font-family: "Josefin Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-family: "Imperator Regular";
         font-size: 5em;
         font-weight: 700;
         line-height: normal;
