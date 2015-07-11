@@ -32,30 +32,7 @@
         <h2 class="intro-text text-center">Enquire / Request a Booking</h2>
         <hr>
         <p>Please complete the form below if you have a general enquiry or if you would like to request a booking. We will get in contact with you as soon as possible.</p>
-        <form role="form">
-          <div class="row">
-            <div class="form-group col-lg-4">
-              <label>Name</label>
-              <input type="text" class="form-control">
-            </div>
-            <div class="form-group col-lg-4">
-              <label>Email Address</label>
-              <input type="email" class="form-control">
-            </div>
-            <div class="form-group col-lg-4">
-              <label>Phone Number</label>
-              <input type="tel" class="form-control">
-            </div>
-            <div class="clearfix"></div>
-            <div class="form-group col-lg-12">
-              <label>Message</label>
-              <textarea class="form-control" rows="6"></textarea>
-            </div>
-            <div class="form-group col-lg-12">
-              <%=link_to "Send the Message", {:controller=> :contact, :action => :send_contact_email}, :method=> :post, class: "btn btn-default" %>
-            </div>
-          </div>
-        </form>
+        <%= render 'form' %>
       </div>
     </div>
   </div>

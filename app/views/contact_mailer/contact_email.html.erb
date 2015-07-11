@@ -1,9 +1,18 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<h1> omg email </h1>
-</head>
-
-<body>
-	<p> all from code </p>
-</body>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>You have recieved a new enquiry / booking request from <%= @contact.name %></h1>
+    <p>
+      Their message is as follows: <%= @contact.message %>
+    </p>
+    <p>Their requested booking date is <%= @contact.date %></p>
+    <p>Their contact details are as follows:</p>
+    <p>Phone: <%= @contact.phone %></p>
+    <p>Phone: <%= @contact.email %></p>
+    </p>
+    <p>Please contact them ASAP regarding this enquiry</p>
+  </body>
+</html>

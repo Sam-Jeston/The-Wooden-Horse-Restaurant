@@ -1,0 +1,21 @@
+<%= simple_form_for(@contact, url: contacts_path, html: { class: 'form-horizontal', multipart: true, method: :post} ) do |f| %>
+  <% if @contact.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@contact.errors.count, "error") %> prohibited this enquiry from being sent:</h2>
+
+      <ul>
+      <% @contact.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <%= f.input :name %>
+  <%= f.input :email %>
+  <%= f.input :phone %>
+  <%= f.input :date %>
+  <%= f.input :message %>
+  <%= f.button :submit %>
+      
+<% end %>

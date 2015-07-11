@@ -23,7 +23,7 @@
 
 body {
     font-family: "Imperator Regular";
-    background: image-url('restaurant-bar-size.jpg') no-repeat center center fixed;
+    background: image-url('bkg.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -51,6 +51,10 @@ p {
 hr {
     max-width: 400px;
     border-color: #999999;
+}
+
+.div-with-bg {
+    background: image-url('about-bkg.jpg') no-repeat center center fixed;
 }
 
 .brand,
@@ -98,7 +102,7 @@ hr {
     margin-bottom: 20px;
     padding: 30px 15px;
     background: #fff;
-    background: rgba(255,255,255,0.9);
+    background: rgba(255,255,255,0.75);
 }
 
 .intro-text {
@@ -125,7 +129,7 @@ hr {
 
 footer {
     background: #fff;
-    background: rgba(255,255,255,0.9);
+    background: rgba(255,255,255,0.75);
 }
 
 footer p {
@@ -139,7 +143,7 @@ footer p {
         margin: 0;
         padding: 30px 0 10px;
         text-align: center;
-        text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.75);
         font-family: "Imperator Regular";
         font-size: 5em;
         font-weight: 700;
@@ -161,7 +165,7 @@ footer p {
         margin: 0;
         padding: 0 0 40px;
         text-align: center;
-        text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.75);
         text-transform: uppercase;
         font-size: 1.25em;
         font-weight: 400;
@@ -184,7 +188,7 @@ footer p {
     .navbar-default {
         border: none;
         background: #fff;
-        background: rgba(255,255,255,0.9);
+        background: rgba(255,255,255,0.75);
     }
 
     .nav>li>a {

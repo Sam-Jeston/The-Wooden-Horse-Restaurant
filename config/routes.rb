@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
-  get 'gallery/index'
+  resources :contacts
 
-  get 'contact' => 'contact#index'
+  get 'gallery/index'
 
   get 'functions' => 'functions#index'
 
@@ -14,8 +14,6 @@ Rails.application.routes.draw do
   get 'home/index'
 
   get 'menu/download'
-
-  post 'contact/send_contact_email'
 
   root 'home#index'
 

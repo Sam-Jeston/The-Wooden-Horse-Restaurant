@@ -1,9 +1,9 @@
 class ContactMailer < ApplicationMailer
-	default from: 'sam.jeston@gmail.com'
+	default from: 'no-reply@woodenhorserestaurant.com.au'
 
-	def contact_email
-		@url = 'http://www.google.com'
-		mail(to: '', subject: 'Testing an emailer')
+	def contact_email(contact)
+		@contact = contact
+		mail(to: 'info@woodenhorserestaurant.com.au', subject: 'You have recieved a new online enquiry / booking request')
 	end
 
 end
