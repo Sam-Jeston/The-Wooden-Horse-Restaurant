@@ -1,6 +1,7 @@
 <!-- Navigation -->
-<nav class="navbar navbar-default" role="navigation">
-  <div class="container">
+<div class="container">
+<div class="row">
+  <nav class="navbar navbar-default" role="navigation">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -10,36 +11,34 @@
         <span class="icon-bar"></span>
       </button>
       <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
-      <a class="navbar-brand" href>The Wooden Horse</a>
+      <a class="navbar-brand" href="index.html">The Wooden Horse</a>
     </div>
     <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="hidden-xs">
+      <%=image_tag 'logoblackontransparent.png', class: "center-block", style: "opacity: 0.65; width:40%; height: 40%;" %>
+        <hr style="margin-top:0px; margin-bottom:5px">
+    </div>
     <div class="collapse navbar-collapse">
-      <div class="hidden-xs">
-        <%= image_tag 'logoblackontransparent.png', class:"center-block", style:"opacity: 0.75; width:40%; height: 40%;" %>
-         <hr style="margin-top:0px; margin-bottom:5px">
-      </div>
       <ul class="nav navbar-nav">
         <li>
-          <%=link_to "Home", root_path, style:"padding:25px" %>
+          <%=link_to "Home", root_path, style: "padding:25px" %>
         </li>
         <li>
-          <%=link_to "About Us", about_path, style:"padding:25px" %>
+          <%=link_to "About Us", about_path, style: "padding:25px" %>
         </li>
         <li>
-          <%=link_to "Menu", menu_path, style:"padding:25px" %>
+          <%=link_to "Menu", menu_path, style: "padding:25px" %>
         </li>
         <li>
-          <%=link_to "Functions", functions_path, style:"padding:25px" %>
+          <%=link_to "Contact", new_contact_path, style: "padding:25px" %>
         </li>
         <li>
-          <%=link_to "Contact", new_contact_path, style:"padding:25px" %>
-        </li>
-        <li>
-          <%=link_to "Gallery", gallery_path, style:"padding:25px" %>
+          <%=link_to "Gallery", gallery_path, style: "padding:25px" %>
         </li>
       </ul>
     </div>
     <!-- /.navbar-collapse -->
-  </div>
   <!-- /.container -->
-</nav>
+  </nav>
+</div>
+</div>
