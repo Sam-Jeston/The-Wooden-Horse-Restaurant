@@ -30,8 +30,8 @@ class ContactsController < ApplicationController
 
     respond_to do |format|
       if @contact.save
-        format.html { notice: 'The enquiry was successfully sent.' }
         ContactMailer.contact_email(@contact).deliver_now
+        redirect_to new_contact_path, notice: 'Your message has been successfully sent.'
       else
         format.html { render :new }
       end
