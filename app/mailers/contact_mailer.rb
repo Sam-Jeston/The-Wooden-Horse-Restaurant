@@ -1,5 +1,5 @@
 class ContactMailer < ApplicationMailer
-	default from: 'no-reply@woodenhorserestaurant.com.au'
+	default from: 'mail@woodenhorserestaurant.com.au'
 
 	def contact_email(contact)
 		@contact = contact
