@@ -78,7 +78,7 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
 
   # Production mailer settings
-  config.action_mailer.default_url_options = { :host => 'www.woodenhorserestaurant.com.au' }
+  config.action_mailer.default_url_options = { :host => 'smtp.sendgrid.net' }
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
     address: 'smtp.sendgrid.net',
@@ -86,7 +86,7 @@ Rails.application.configure do
     domain: 'heroku.com',
     :authentication=> :plain,
     enable_starttls_auto: true,
-    user_name: ENV['sendgrid_username'],
-    password: ENV['sendgrid_pasword']
+    user_name: ENV['SENDGRIND_USERNAME'],
+    password: ENV['SENDGRID_PASSWORD']
   }
 end
