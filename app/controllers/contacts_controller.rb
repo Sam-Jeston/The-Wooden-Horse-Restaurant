@@ -28,13 +28,11 @@ class ContactsController < ApplicationController
   def create
     @contact = Contact.new(contact_params)
 
-    respond_to do |format|
-      if @contact.save
-        ContactMailer.contact_email(@contact).deliver_now
-        redirect_to new_contact_path, notice: 'Your message has been successfully sent.'
-      else
-        format.html { render :new }
-      end
+    if @contact.save
+      ContactMailer.contact_email(@contact).deliver_now
+      redirect_to new_contact_path, notice: 'Your message has been successfully sent.'
+    else
+      redirect_to new_contact_path, notice: 'Sorry there has been a problem sending this message'
     end
   end
 
