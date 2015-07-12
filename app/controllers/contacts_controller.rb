@@ -31,11 +31,9 @@ class ContactsController < ApplicationController
     respond_to do |format|
       if @contact.save
         format.html { notice: 'The enquiry was successfully sent.' }
-        format.json { render :new, status: :created, location: @contact }
         ContactMailer.contact_email(@contact).deliver_now
       else
         format.html { render :new }
-        format.json { render json: @contact.errors, status: :unprocessable_entity }
       end
     end
   end
