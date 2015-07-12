@@ -30,8 +30,8 @@ class ContactsController < ApplicationController
 
     respond_to do |format|
       if @contact.save
-        format.html { redirect_to @contact, notice: 'The enquiry was successfully sent.' }
-        format.json { render :show, status: :created, location: @contact }
+        format.html { notice: 'The enquiry was successfully sent.' }
+        format.json { render :new, status: :created, location: @contact }
         ContactMailer.contact_email(@contact).deliver_now
       else
         format.html { render :new }
