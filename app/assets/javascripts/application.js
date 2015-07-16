@@ -14,5 +14,4 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require FlipClock
-//= require jquery.countdown
 //= require_tree .
