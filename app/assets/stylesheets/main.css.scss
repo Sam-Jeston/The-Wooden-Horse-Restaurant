@@ -8,22 +8,22 @@
 
 @font-face {
     font-family: "Imperator Regular";
-    src: url(/assets/Imperator.ttf) format("truetype");
+    src: font-url(/assets/Imperator.ttf) format("truetype");
 }
 
 @font-face {
     font-family: "Imperator Bold";
-    src: url(/assets/ImperatorBold.ttf) format("truetype");
+    src: font-url(/assets/ImperatorBold.ttf) format("truetype");
 }
 
 @font-face {
     font-family: "Imperator Caps";
-    src: url(/assets/ImperatorSmallCaps.ttf) format("truetype");
+    src: font-url(/assets/ImperatorSmallCaps.ttf) format("truetype");
 }
 
 body {
     font-family: "Imperator Regular";
-    background: black;
+    background: #2F332E;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
