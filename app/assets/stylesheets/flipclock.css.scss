@@ -13,19 +13,6 @@
     backface-visibility: hidden;
 }
 
-.myflipclock * {
-  zoom: 0.9;
-  -moz-transform: scale(0.9);
-  +screen-md {
-    zoom: 0.6;
-    -moz-transform: scale(0.6); }
-  +screen-sm {
-    zoom: 0.45;
-    -moz-transform: scale(0.3); }
-  +screen-xs {
-    zoom: 0.1;
-    -moz-transform: scale(0.3); }}
-
 .flip-clock-wrapper a {
   cursor: pointer;
   text-decoration: none;
@@ -46,7 +33,7 @@
   clear: both; }
 
 .flip-clock-wrapper.clearfix {
-  *zoom: 1; }
+  zoom: 1; }
 
 /* Main */
 .flip-clock-wrapper {
