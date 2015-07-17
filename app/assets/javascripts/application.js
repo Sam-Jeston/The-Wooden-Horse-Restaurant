@@ -14,4 +14,5 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require FlipClock
+//= require own
 //= require_tree .

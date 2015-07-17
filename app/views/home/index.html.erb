@@ -7,21 +7,9 @@
       <div class="hidden-xs" style="text-align:center; display:inline-block">
         <div class="grand-opening" style="width:auto"></div>
       </div>
-      <div class="hidden-lg hidden-md hidden-sm" style="text-align:center; display:inline-block">
-        <div class="grand-opening-small" style="width:auto; zoom:0.45;"></div>
+      <!-- <div class="hidden-lg hidden-md" style="text-align:center; display:inline-block">
+        <div class="grand-opening-small" style="width:auto; zoom:0.45;"></div> -->
       </div>
-        <script type="text/javascript">
-          $('.grand-opening').FlipClock(new Date(2015,7,14).getTime()/1000 - new Date().getTime()/1000, {
-            clockFace: 'DailyCounter',
-            countdown: true
-          });
-        </script>
-        <script type="text/javascript">
-          $('.grand-opening-small').FlipClock(new Date(2015,7,14).getTime()/1000 - new Date().getTime()/1000, {
-            clockFace: 'DailyCounter',
-            countdown: true
-          });
-        </script>
         <br>
       </div>
     </div>
@@ -34,12 +22,26 @@
       </br>
     </div>
   </div>
-  <script type='text/javascript'>
+</div>
+<!-- /.container -->
+<%= javascript_tag do %>
+  // Countdown timers
+
+  $('.grand-opening').FlipClock(new Date(2015,7,14).getTime()/1000 - new Date().getTime()/1000, {
+    clockFace: 'DailyCounter',
+    countdown: true
+  });
+
+  $('.grand-opening-small').FlipClock(new Date(2015,7,14).getTime()/1000 - new Date().getTime()/1000, {
+    clockFace: 'DailyCounter',
+    countdown: true
+  });
+
+  // auto-set carousel time on page load
+
   $(document).ready(function() {
     $('.carousel').carousel({
       interval: 4000
     })
   });
-  </script>
-</div>
-<!-- /.container -->
+<% end %>
