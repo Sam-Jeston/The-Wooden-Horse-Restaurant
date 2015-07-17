@@ -2,6 +2,7 @@
 <head>
   <title>The Wooden Horse Restaurant</title>
 </head>
+<span itemscope itemtype="http://schema.org/Restaurant">
 <div class="container">
 <div class="row">
   <nav class="navbar navbar-default" role="navigation">
@@ -18,7 +19,7 @@
     </div>
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="hidden-xs">
-      <%=image_tag 'logoblackontransparent.png', class: "center-block", style: "opacity: 0.65; width:40%; height: 40%;" %>
+      <%=image_tag 'logoblackontransparent.png', class: "center-block", style: "opacity: 0.65; width:40%; height: 40%;"%>
         <hr style="margin-top:0px; margin-bottom:5px">
     </div>
     <div class="collapse navbar-collapse" id="navbar-collapse">
@@ -30,7 +31,7 @@
           <%=link_to "About Us", about_path, style: "padding:25px" %>
         </li>
         <li>
-          <%=link_to "Menu", menu_path, style: "padding:25px" %>
+          <%=link_to "Menu", menu_path, style: "padding:25px", itemprop: "menu" %>
         </li>
         <li>
           <%=link_to "Contact", new_contact_path, style: "padding:25px" %>
