@@ -33,6 +33,9 @@ gem 'font-awesome-rails'
 # Puma Web Server
 gem 'puma'
 
+# Generate the sitemap for google
+gem 'sitemap_generator'
+
 # Simple Form
 gem 'simple_form'
 
