@@ -198,6 +198,12 @@ footer p {
         table-layout: fixed;
         font-size: 1.25em;
     }
+
+    .navbar-nav>li {
+        display: table-cell;
+        float: none;
+        text-align: center;
+    }
 }
 
 @media screen and (min-width:1200px) {
