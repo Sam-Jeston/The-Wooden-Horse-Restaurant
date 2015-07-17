@@ -23,6 +23,9 @@ module WoodenHorse
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
 
+    # Config for heroku
+    config.assets.enabled = true 
+
     # Add bower to rails asset pipeline
     config.assets.paths << 
      Rails.root.join("vendor","assets","bower_components")
