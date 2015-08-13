@@ -4,37 +4,22 @@
       <div class="col-lg-12 text-center">
         <h3>Welcome to&nbsp;<span itemprop="name">Wooden Horse Restaurant</span>&nbsp;& Bar</h3>
         </br>
-        <h3>We are now open!</h3>
-        </br>
-        <div id="carousel-food" class="carousel slide">
-          <!-- Indicators -->
-          <ol class="carousel-indicators hidden-xs">
-            <li data-target="#carousel-food" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel-food" data-slide-to="1"></li>
-            <li data-target="#carousel-food" data-slide-to="2"></li>
-          </ol>
-
-          <!-- Wrapper for slides -->
-          <div class="carousel-inner">
-            <div class="item active">
-              <%=image_tag 'entree.jpg', class: "img-responsive img-full", style: "opacity: 0.8", alt: "" %>
-            </div>
-            <div class="item">
-              <%=image_tag 'main_f.jpg', class: "img-responsive img-full", style: "opacity: 0.8", alt: "" %>
-            </div>
-            <div class="item">
-              <%=image_tag 'dessert.jpg', class: "img-responsive img-full", style: "opacity: 0.8", alt: "" %>
-            </div>
-          </div>
-
-          <!-- Controls -->
-          <a class="left carousel-control" href="#carousel-food" data-slide="prev">
-            <span class="icon-prev"></span>
-          </a>
-          <a class="right carousel-control" href="#carousel-food" data-slide="next">
-            <span class="icon-next"></span>
-          </a>
-        </div>
+        <table style="border:none">
+          <tr>
+            <td>
+              <p>After endless hours of hardwork from the team, we are proud to announce that our doors are now open.</p>
+              </br>
+              <p>Our menu is available online from the menu tab above.</p>
+              </br>
+              <p>We will have our gallery filled with shots of our great food as soon as we can. In the meantime checkout our Facebook page which has some examples of our work (link below).</p>
+              </br>
+              <p>Please give us a call on (07) 3857 3893 to book a table now.</p>
+            </td>
+            <td style="width:50%">
+             <%=image_tag 'Main.jpg', class: "img-responsive", style: "display:block; margin: 0 auto; width:70%; opacity: 0.8;" %>
+            </td>
+          </tr>
+        </table>
       </div>
     </div>
   </div>
@@ -48,13 +33,4 @@
   </div>
 </div>
 <!-- /.container -->
-<%= javascript_tag do %>
 
-  // auto-set carousel time on page load
-
-  $(document).ready(function() {
-    $('.carousel').carousel({
-      interval: 4000
-    })
-  });
-<% end %>
