@@ -13,7 +13,11 @@ Rails.application.routes.draw do
 
   get 'home/index'
 
-  get 'menu/download'
+  get 'menu_download' => 'menu#download'
+
+  get 'menu_drinks' => 'menu#download_drinks'
+
+  get 'menu_kids' => 'menu#download_kids'
 
   root 'home#index'
 
