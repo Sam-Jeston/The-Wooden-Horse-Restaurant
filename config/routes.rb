@@ -11,6 +11,8 @@ Rails.application.routes.draw do
 
   get 'gallery' => 'gallery#index'
 
+  get 'functions' => 'functions#index'
+
   get 'home/index'
 
   get 'menu_download' => 'menu#download'
@@ -18,6 +20,8 @@ Rails.application.routes.draw do
   get 'menu_drinks' => 'menu#download_drinks'
 
   get 'menu_kids' => 'menu#download_kids'
+
+  get 'functions_pdf' => 'functions#download'
 
   root 'home#index'
 
