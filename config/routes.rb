@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'drink/index'
+
   resources :contacts
 
   get 'gallery/index'
@@ -13,13 +15,17 @@ Rails.application.routes.draw do
 
   get 'functions' => 'functions#index'
 
+  get 'drink' => 'drink#index'
+
   get 'home/index'
 
   get 'menu_download' => 'menu#download'
 
-  get 'menu_drinks' => 'menu#download_drinks'
+  get 'menu_lunch' => 'menu#download_lunch'
 
   get 'menu_kids' => 'menu#download_kids'
+
+  get 'menu_drinks' => 'drink#download_drinks'
 
   get 'functions_pdf' => 'functions#download'
 
