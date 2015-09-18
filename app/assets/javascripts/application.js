@@ -15,4 +15,6 @@
 //= require turbolinks
 //= require jquery.countdown
 //= require FlipClock
+//= require galleria-1.4.2
+//= require galleria.classic
 //= require_tree .
