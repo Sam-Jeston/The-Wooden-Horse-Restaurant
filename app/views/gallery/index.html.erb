@@ -5,29 +5,25 @@
         <hr>
         <h2 class="intro-text text-center">Our Gallery</h2>
         <hr>
-        <hr class="visible-xs">
-        <div class="galleria">
-          <%= image_tag 'food_1.jpg', :data => { :description => 'description', :title => 'title' } %>
-          <%= image_tag 'food_2.jpg', :data => { :description => 'description', :title => 'title' } %>
-          <%= image_tag 'food_3.jpg', :data => { :description => 'description', :title => 'title' } %>
-          <%= image_tag 'food_4.jpg', :data => { :description => 'description', :title => 'title' } %>
-          <%= image_tag 'food_5.jpg', :data => { :description => 'description', :title => 'title' } %>
-          <%= image_tag 'food_6.jpg', :data => { :description => 'description', :title => 'title' } %>
-          <%= image_tag 'food_7.jpg', :data => { :description => 'description', :title => 'title' } %>
-          <%= image_tag 'food_8.jpg', :data => { :description => 'description', :title => 'title' } %>
-          <%= image_tag 'food_9.jpg', :data => { :description => 'description', :title => 'title' } %>
-          <%= image_tag 'food_10.jpg', :data => { :description => 'description', :title => 'title' } %>
-          <%= image_tag 'food_11.jpg', :data => { :description => 'description', :title => 'title' } %>
-          <%= image_tag 'res_1.jpg', :data => { :description => 'description', :title => 'title' } %>
-          <%= image_tag 'res_2.jpg', :data => { :description => 'description', :title => 'title' } %>
-          <%= image_tag 'res_3.jpg', :data => { :description => 'description', :title => 'title' } %>
-          <%= image_tag 'res_4.jpg', :data => { :description => 'description', :title => 'title' } %>
+        <div style="text-align:center;" >
+          <div class="galleria" style="width: 75%; margin: auto;">
+            <%= image_tag 'food_1.jpg', :data => { :description => 'description', :title => 'title' } %>
+            <%= image_tag 'food_2.jpg', :data => { :description => 'description', :title => 'title' } %>
+            <%= image_tag 'food_3.jpg', :data => { :description => 'description', :title => 'title' } %>
+            <%= image_tag 'food_4.jpg', :data => { :description => 'description', :title => 'title' } %>
+            <%= image_tag 'food_5.jpg', :data => { :description => 'description', :title => 'title' } %>
+            <%= image_tag 'food_6.jpg', :data => { :description => 'description', :title => 'title' } %>
+            <%= image_tag 'food_7.jpg', :data => { :description => 'description', :title => 'title' } %>
+            <%= image_tag 'food_8.jpg', :data => { :description => 'description', :title => 'title' } %>
+            <%= image_tag 'food_9.jpg', :data => { :description => 'description', :title => 'title' } %>
+            <%= image_tag 'food_10.jpg', :data => { :description => 'description', :title => 'title' } %>
+            <%= image_tag 'food_11.jpg', :data => { :description => 'description', :title => 'title' } %>
+            <%= image_tag 'res_1.jpg', :data => { :description => 'description', :title => 'title' } %>
+            <%= image_tag 'res_2.jpg', :data => { :description => 'description', :title => 'title' } %>
+            <%= image_tag 'res_3.jpg', :data => { :description => 'description', :title => 'title' } %>
+            <%= image_tag 'res_4.jpg', :data => { :description => 'description', :title => 'title' } %>
+          </div>
         </div>
-        </br>
-        </br>
-        </br>
-        </br>
-        </br>
         </br>
         </br>
       </div>
@@ -35,6 +31,7 @@
   </div>
 </div>
 <script>
+  var wid = $( window ).width();
   Galleria.loadTheme(<% asset_path "/galleria.classic.js" %>);
-  Galleria.run('.galleria', {height: 500, width: 800, autoplay: 2000, responsive: true});
+  Galleria.run('.galleria', {height: 500, width: wid / 1.8, autoplay: 4000, responsive: true });
 </script>
