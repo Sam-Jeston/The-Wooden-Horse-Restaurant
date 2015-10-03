@@ -5,8 +5,8 @@
         <hr>
         <h2 class="intro-text text-center">Our Gallery</h2>
         <hr>
-        <div style="text-align:center;" >
-          <div class="galleria" style="width: 75%; margin: auto;">
+        <div style="text-align:center;" id="gallery-width">
+          <div class="galleria" style="margin: auto;">
             <%= image_tag 'food_1.jpg', :data => { :description => 'description', :title => 'title' } %>
             <%= image_tag 'food_2.jpg', :data => { :description => 'description', :title => 'title' } %>
             <%= image_tag 'food_3.jpg', :data => { :description => 'description', :title => 'title' } %>
@@ -31,7 +31,7 @@
   </div>
 </div>
 <script>
-  var wid = $( window ).width();
+  var wid = $(document).find("#gallery-width").width();
   Galleria.loadTheme(<% asset_path "/galleria.classic.js" %>);
-  Galleria.run('.galleria', {height: 500, width: wid / 1.8, autoplay: 4000, responsive: true });
+  Galleria.run('.galleria', {height: 500, width: wid / 1.4, autoplay: 4000, responsive: true });
 </script>
