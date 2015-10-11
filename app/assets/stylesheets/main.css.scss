@@ -21,13 +21,17 @@
     src: font-url("ImperatorSmallCaps.ttf") format("truetype");
 }
 
+/*! background: #2F332E; */
+
 body {
     font-family: "Imperator Regular";
-    background: #2F332E;
+    background-image: image-url("bg-lights1.jpg");
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 h1,
