@@ -29,6 +29,8 @@
       <label>Message</label>
       <%= f.input_field :message, as: :text, class: 'form-control', style: 'padding-top:1px;padding-bottom:1px;line-height:30px;', input_html: {rows: 4, required: true} %>
     </div>
+    <%= f.input_field :hidden_field, id: 'bot', style: 'display:none;' %>
+
     <%= f.submit 'Send the Message', class: 'btn btn-primary', style: 'margin-left:15px;line-height:20px;padding-top:3px;' %>
   </div>
       

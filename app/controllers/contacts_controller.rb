@@ -28,6 +28,11 @@ class ContactsController < ApplicationController
   def create
     @contact = Contact.new(contact_params)
 
+    unless @contact.hidden_field.blank?
+      redirect_to new_contact_path, notice: 'Message not sent - suspicious data submitted. Please try again.'
+      return
+    end
+
     if @contact.save
       ContactMailer.contact_email(@contact).deliver_now
       redirect_to new_contact_path, notice: 'Your message has been successfully sent.'
@@ -68,6 +73,6 @@ class ContactsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def contact_params
-      params.require(:contact).permit(:name, :email, :phone, :date, :message)
+      params.require(:contact).permit(:name, :email, :phone, :date, :message, :hidden_field)
     end
 end
