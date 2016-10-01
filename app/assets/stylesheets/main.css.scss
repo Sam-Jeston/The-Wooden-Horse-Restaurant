@@ -217,3 +217,29 @@ footer p {
         clear: both;
     }
 }
+
+.video-container {
+  position:relative;
+  padding-bottom:56.25%;
+  padding-top:10px;
+  height:0;
+  overflow:hidden;
+}
+
+.video-container iframe, .video-container object, .video-container embed {
+  position:absolute;
+  top:7.5%;
+  left:7.5%;
+  width:85%;
+  height:85%;
+}
+
+// Custom font styling
+
+.bold-lowercase {
+  font-family: "Imperator Bold";
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-size: 1.6em;
+  line-height: 1.6;
+}
