@@ -7,6 +7,8 @@ Rails.application.routes.draw do
 
   get 'functions' => 'functions#index'
 
+  get 'book' => 'book#index'
+
   get 'menu' => 'menu#index'
 
   get 'about' => 'about#index'
